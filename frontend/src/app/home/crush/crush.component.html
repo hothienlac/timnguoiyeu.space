@@ -1,0 +1,17 @@
+<nb-card>
+  <nb-card-header>
+    Your Crushes
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+      [settings]="settings"
+      [source]="source"
+      (delete)="uncrush($event)"
+    >
+    </ng2-smart-table>
+  </nb-card-body>
+  <nb-card-footer>
+    <button fullWidth nbButton status="success" (click)="newCrush()">Add new Crush</button>
+  </nb-card-footer>
+</nb-card>

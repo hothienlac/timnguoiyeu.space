@@ -1,0 +1,24 @@
+
+<div style="width: 50%; margin: 0 auto;">
+  <img src="assets/images/logo.png" alt="logo" style="max-width:50%; margin: 0 25% 5% 25%;">
+  <nb-card>
+    <nb-card-body>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="label">Please Reenter your Password to make sure you remember it!</label>
+          <input
+            type="password"
+            nbInput
+            fullWidth
+            id="exampleInputPassword1"
+            placeholder="Password"
+            [formControl]="password"
+          />
+        </div>
+        <button type="submit" nbButton status="primary" (click)="verify()" [nbSpinner]="spin" nbSpinnerStatus="primary" nbSpinnerSize="large" nbSpinnerMessage="">
+          Verify
+        </button>
+      </form>
+    </nb-card-body>
+  </nb-card>
+</div>

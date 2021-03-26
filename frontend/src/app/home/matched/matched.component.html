@@ -1,0 +1,21 @@
+<div style="width: 50%; margin: 0 auto;">
+  <img src="assets/images/logo.png" alt="logo" style="max-width:50%; margin: 0 25% 5% 25%;">
+  <nb-card>
+    <nb-card-body>
+      CONGRATULATION, YOU ARE NOW MATCHED WITH {{matchedService.matched}}
+    </nb-card-body>
+    <nb-card-footer>
+      <button
+        type="submit"
+        nbButton
+        status="primary"
+         (click)="breakUp()"
+         [nbSpinner]="spin"
+         nbSpinnerStatus="primary"
+         nbSpinnerSize="large"
+         nbSpinnerMessage=""
+      >Break Up
+      </button> 
+    </nb-card-footer>
+  </nb-card>
+</div>

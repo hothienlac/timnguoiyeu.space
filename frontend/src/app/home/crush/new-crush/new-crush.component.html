@@ -1,0 +1,16 @@
+<nb-card>
+  <nb-card-header>Enter your crush email</nb-card-header>
+  <nb-card-body>
+    <input #email nbInput placeholder="email">
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="row">
+      <div class="col-md-6">
+        <button fullWidth class="cancel" nbButton status="danger" (click)="cancel()">Cancel</button>
+      </div>
+      <div class="col-md-6">
+        <button fullWidth nbButton status="success" (click)="crush(email.value)">Submit</button>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>

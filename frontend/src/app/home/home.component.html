@@ -1,0 +1,9 @@
+<div *ngIf="matchedService.matched !== '0';then matched_ else crush_">here is ignored</div>
+
+<ng-template #matched_>
+  <ngx-matched [matched]="matched"></ngx-matched>
+</ng-template>
+
+<ng-template #crush_>
+  <ngx-crush></ngx-crush>
+</ng-template>
