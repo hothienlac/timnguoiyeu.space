@@ -6,13 +6,9 @@ You can crush on someone by input their email. And only you know who you crush o
 
 All data is encrypted. So you are safe even the databse is exposed, so the database administrator cannot see any thing in databse. However, to make sure application work properly, database is cannot access widely.
 
-An example:
+For example, there are some student in class: A, B, C are male and X, Y, Z are female. A like X, Y, Z, but he are not willing to express himself to X or Y or Z. Similarly X like A, B, C, but she are not willing to express herself to A or B or C. The reason may be that some one scare that if they express their selves like someone, they would lose their friendship, or they shy,... There are some reason for that. I am the one too.
 
-A crush on X, Y, Z
-X crush on A, B, C
+So A can create an account to do so. A can add X, Y, Z to his crush list. X create an account and add A, B, C to her crush list. The system will notice that can match A to X (A like X and X like A).
 
-so we match A and X.
-
-You may wonder how A know and crush X, Y, Z and X crush A, B, C. They know in their life, for example A, B, C, X, Y, Z are students in the same class.
-
-The platform is just a tool for you in real life, not a social page were you find some one.
+All information are encrypted by user password. So it is safe if database are leaked.
+I have develop an algorithm to due to the problem that Even The system do not know users crush list, due to the encryption based on user own password, the system can match A to X.
