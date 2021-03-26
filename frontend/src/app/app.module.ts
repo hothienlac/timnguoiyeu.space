@@ -9,9 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule as ngFormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { CoreModule } from './@core/core.module';
-import { ThemeModule } from './@theme/theme.module';
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {
   NbChatModule,
@@ -46,6 +43,8 @@ import { UncrushComponent } from './home/crush/uncrush/uncrush.component';
 import { CrushService } from './home/crush/crush.service';
 import { NewCrushComponent } from './home/crush/new-crush/new-crush.component';
 import { BreakupComponent } from './home/matched/breakup/breakup.component';
+import { AppComponent } from './app.component';
+import { ThemeModule } from './@theme/theme.module';
 
 @NgModule({
   declarations: [
@@ -65,17 +64,11 @@ import { BreakupComponent } from './home/matched/breakup/breakup.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    NbSidebarModule.forRoot(),
-    NbMenuModule.forRoot(),
-    NbDatepickerModule.forRoot(),
+    ThemeModule.forRoot(),
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
     NbToastrModule.forRoot(),
-    NbChatModule.forRoot({
-      messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
-    }),
-    CoreModule.forRoot(),
-    ThemeModule.forRoot(),
+    NbLayoutModule,
     NbThemeModule,
     NbLayoutModule,
     NbCardModule,
